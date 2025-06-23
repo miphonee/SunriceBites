@@ -246,15 +246,15 @@
 <form action="https://formspree.io/f/xgvylyyv" method="post" class="mx-auto" style="max-width: 600px;">
     <div class="mb-3">
         <label for="nombre" class="form-label"> Nombre completo</label>
-        <input type="text" class="form-control shadow-lg" id="nombre" placeholder="Ej. Maria perez" required>
+        <input type="text" class="form-control shadow-lg" id="nombre" name="nombre" placeholder="Ej. Maria perez" required>
     </div>
     <div class="mb-3">
         <label for="correo" class="form-label">Correo Electronico</label>
-        <input type="email" class="form-control shadow-lg" id="correo" placeholder="nombre@ejemplo.com" required>
+        <input type="email" class="form-control shadow-lg" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
     </div>
     <div class="mb-3">
         <label for="producto" class="form-label"> Selecciona un producto</label>
-        <select class="form-select shadow-lg" id="producto" required>
+        <select class="form-select shadow-lg" id="producto" name="producto" required>
             <option selected disabled> Elige una opcion</option>
             <option>Sandwich</option>
             <option>Pan de sal</option>
@@ -267,8 +267,8 @@
         </select>
     </div>
     <div class="mb-4">
-        <label for="Mensaje" class="form-label">Comenta algo sobre nosotros</label>
-        <textarea class="form-control shadow-lg" id="mensaje" rows="3" placeholder="Escribenos"></textarea>
+        <label for="mensaje" class="form-label">Comenta algo sobre nosotros</label>
+        <textarea class="form-control shadow-lg" id="mensaje" name="mensaje" rows="3" placeholder="Escribenos"></textarea>
     </div>
     <button type="submit" class="btn btn-primary btn-lg w-100 shadow-lg"> Listo</button>
 </form>
